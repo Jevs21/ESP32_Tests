@@ -6,7 +6,11 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
+const char* ssid = "CheZ Lounge 2.0";
+const char* password = "Chez12345";
 
+const char* githubToken = "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";
+const char* githubUsername = "Jevs21";
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels

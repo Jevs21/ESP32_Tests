@@ -58,13 +58,13 @@ void displayMoisture(int val) {
   String valStr = "Moisture: " + String(val) + "%";
   int textWidth = valStr.length() * 6; // Width of the text in pixels (6 pixels per character)
   int cursorX = (SCREEN_WIDTH - textWidth) / 2; // Calculate the X position for centering the text
-  int cursorY = (SCREEN_HEIGHT / 2) - 20; // Calculate the Y position for centering the text
+  int cursorY = (SCREEN_HEIGHT / 2) - 10; // Calculate the Y position for centering the text
 
   display.setCursor(cursorX, cursorY); // Set the cursor position
   display.setTextSize(1); // Set the text size
   display.setTextColor(WHITE); // Set the text color
   display.println(valStr); // Print the valance string
-  display.drawBitmap((SCREEN_WIDTH / 2) - 14, (SCREEN_HEIGHT - 16) / 2, waterDroplet_bmp, 16, 14, WHITE); // Display water droplet
+  display.drawBitmap((SCREEN_WIDTH / 2) - 14, (SCREEN_HEIGHT + 32) / 2, waterDroplet_bmp, 16, 14, WHITE); // Display water droplet
 
   display.display(); // Update the display
 }
